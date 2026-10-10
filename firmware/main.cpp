@@ -1,0 +1,17 @@
+#include <Arduino.h>
+
+//WristByte firmware, step 1: keep time and print it over serial
+//No display yet. The button pin can change once the board exists
+
+const int BTN_PIN = 0; //BOOT button on the ESP32 device
+its
+const unsigned long DEBOUNCE_MS = 40;
+
+int hours = 12, minutes = 0, seconds = 0,
+unsigned long lastTick = 0;
+
+bool lastReading = HIGH;
+bool stableState = HIGH;
+unsigned long lastChange = 0;
+
+void
