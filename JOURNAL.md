@@ -1,2 +1,10 @@
-First commit - 2026-10-10:
-  "Creation of the repo as well as the creation of the folder structure"
+---
+title: "WristByte"
+author: "Reid Quigley (aka RAQuig)"
+description: "A custom open-source smartwatch with its own PCB, firmware and 3D printed case. Built for Hack Club Forge"
+created_at: "2026-10-10"
+---
+
+# First commit
+
+Creation of the repo as well as the creation of the filesystem hierarchy that the project and repo will use.
