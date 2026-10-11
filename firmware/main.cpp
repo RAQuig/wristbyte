@@ -26,3 +26,37 @@ void printTime() {
     snprint(buf, sizeof(buf), "%02d:%02d:%02d", hours, minutes, seconds);
     Serial.println(buf);
 }
+
+//Each press adds one minutes, so there's a way to set the time for now.
+void handleButton() {
+    bool reading = digitalRead(BTN_PIN);
+    if (reading != lastReading) {
+        lastChange = millis();
+        lastReading = reading;
+    
+    }
+
+    if (millis() - lastChange > DEBOUNCE_MS && reading != stableState) {
+        stableState = reading;
+        if (stableState == LOW) {
+            minutes = (minutes + 1) % 60;
+            seconds = 0
+            printTime()
+        }
+    }
+}
+
+void setup() {
+    Serial.begin(115200)
+    pinMode(BTN_PIN, INPUT_PULLUP);
+    Serial.println("WristByte booting...")
+}
+
+void loop() {
+    handleButton();
+    if (millis() - lastTick >= 1000) {
+        lastTick += 1000;
+        tickSecond();
+        printTime()
+    }
+}
