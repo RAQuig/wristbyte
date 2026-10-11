@@ -1,0 +1,17 @@
+Item,Part,Qty,"Unti price (USD, est)", "Total (USD, est)", Notes
+Microcontroller,ESP32-S3-MINI-1 module,2,.450,9.00,WiFi + Bluetooth; chip not final
+Display,"1.28 in round 240x240 LCD (GC9A01, SPI, FPC)",2,8.00,16.00,Final display not final
+IMU,"LSM6DS3TR-C (steps, wrist-raise)",2,3.00,6.00,Alt: BMI270
+Battery,3.7V LiPo ~300mAh with JST connector,2,6.00,12.00,Check physical size against case
+Charger IC,MCP73831 LiPo charger,2,0.70,1.40,
+Regulator, AP2112K-3.3 LDO,2,0.40,0.80,
+USB-C port,16-pin USB-C receptacle,2,0.50,1.00,Charging and Flashing
+Buttons,"SMD tactile switch, side-actuated",6,1.00,6.00,3 per board; the 'good buttons'
+Vibration Motor, 8mm coin motor,2,1.50,3.00,
+Motor driver,N-channel MOSFET + flyback diode,2,0.60,1.20,
+Passives,"Resistors, capasitors, LEDs assortment",1,8.00,8.00,Estimate!
+PCB,"Custom board, fab + assembly, 2 revisions",1,70.00,70.00,Estimate; includes setup fees
+Case,"3D printed case, filament or print service",1,10.00,10.00,Estimate
+Strap,20mm silicone watch strap,1,6.00,6.00,
+Shipping and import,Shipping + taxes to Saskatoon/Saskatchewan/Canada,1,20.00,20.00,Estimate; depends on suppliers
+TOTAL,,,,170.40,Tier 2 cap is 200$
