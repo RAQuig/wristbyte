@@ -14,4 +14,15 @@ bool lastReading = HIGH;
 bool stableState = HIGH;
 unsigned long lastChange = 0;
 
-void
+void tickSecond() {
+    seconds++;
+    if (seconds >= 60) { seconds = 0; minutes++; }
+    if (minutes >= 60) { minutes = 0; hours++; }
+    if (hours >=24)  hours = 0;
+}
+
+void printTime() {
+    char buf[9]
+    snprint(buf, sizeof(buf), "%02d:%02d:%02d", hours, minutes, seconds);
+    Serial.println(buf);
+}
